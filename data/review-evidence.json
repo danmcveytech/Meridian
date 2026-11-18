@@ -1,0 +1,27 @@
+{
+  "E1": {
+    "objective": "Collections priority",
+    "snapshot_month": "2025-06",
+    "forecast_month": "2025-07",
+    "accounts": 179,
+    "expected_late_accounts": 39.0
+  },
+  "E2": {
+    "metric": "Average precision",
+    "score": 0.4969,
+    "baseline": 0.1765,
+    "first_test": "2025-01",
+    "last_test": "2025-05",
+    "test_account_month_rows": 895,
+    "evaluation_training_rows": 2150,
+    "baseline_method": "training late rate"
+  },
+  "E3": {
+    "most_influential_feature": "Prior days overdue",
+    "holdout_permutation_importance": 0.262
+  },
+  "E4": {
+    "raw_rows": 3271,
+    "all_usable_snapshots_including_scoring": 3224
+  }
+}

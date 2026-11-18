@@ -1,0 +1,13 @@
+MANAGEMENT BRIEF: COLLECTIONS LATE-RISK FORECAST
+
+FORECAST
+The model was scored on the June 2025 snapshot (scoring month) and forecasts outcomes for July 2025 (forecast month) [E1]. It covers 179 distinct accounts, with 39.0 expected late accounts projected for July 2025 [E1]. This figure is a planning estimate, not a guarantee, and actual results may differ.
+
+MODEL VS BASELINE
+Backtesting ran from January 2025 through May 2025 across 895 test account-month rows - row-level records, not distinct accounts [E2]. Average precision (higher is better) was 0.4969 for the model versus 0.1765 for the baseline, which used the training late rate [E2], so the model ranks higher-risk accounts better than the baseline approach. Evaluation models were trained on 2,150 training rows [E2]. Separately, of 3,271 raw rows, 3,224 usable snapshot rows were available, including the June 2025 scoring snapshot; usable rows are a different quantity from evaluation training rows [E4].
+
+KEY ASSOCIATION AND UNCERTAINTY
+The most influential feature was "Prior days overdue," with a holdout permutation importance of 0.262 [E3]. This is an association measure only - it does not establish cause or direction of effect, as no sign can be inferred from permutation importance [E3]. With average precision at 0.4969, the ranking is imperfect: some flagged accounts will not go late, and some late accounts may be missed [E2]. The 39.0 projection should therefore be treated with appropriate caution [E1].
+
+RECOMMENDED ACTION (REVERSIBLE)
+Run a time-boxed pilot for the July 2025 cycle: use the model's ranking to order collections outreach across the 179 accounts, retain the current process as a fallback, review outcomes after the cycle, and roll back if the ranking adds no value. No outcome, savings, or payback is guaranteed; the pilot is designed to be reversed at low cost.
